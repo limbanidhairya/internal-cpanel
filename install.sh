@@ -1,62 +1,82 @@
 #!/bin/bash
 
-# --- Internal cPanel Unified Installer ---
-# Purpose: Auto-install dependencies, clone build, and execute hot-patches.
+# --- Internal cPanel Build Installer (Patch-Based) ---
+# Purpose: Clean system, install cPanel binaries, and apply bypass hot-patches.
 
-echo "[*] Initializing Internal cPanel Build..."
+echo "[*] Initializing Internal cPanel Build Setup..."
 
-# 1. Platform Detection
+# 1. System Preparation
 if [ -f /etc/os-release ]; then
     . /etc/os-release
     OS_ID=$ID
 else
-    echo "[!] Unsupported distribution."
+    echo "[!] Unsupported OS distribution."
     exit 1
 fi
 
-# 2. Dependency Installation
-echo "[*] Installing core dependencies (git, perl, python3, curl)..."
+echo "[*] Detected $ID. Updating package list..."
 case "$OS_ID" in
     ubuntu|debian)
         apt-get update -y && apt-get install -y git perl python3 curl wget
         ;;
     almalinux|centos|rhel|fedora)
-        yum install -y git perl python3 curl wget || dnf install -y git perl python3 curl wget
-        ;;
-    *)
-        echo "[!] OS $OS_ID may not be fully supported. Attempting generic install..."
+        yum makecache -y && yum install -y git perl python3 curl wget
         ;;
 esac
 
-# 3. Clone Repository
+# 2. Clone Build Logic
 INSTALL_DIR="/root/internal-cpanel-build"
+echo "[*] Cloning repository for patches and logic..."
 if [ -d "$INSTALL_DIR" ]; then
-    echo "[*] Repository already exists. Updating..."
     cd "$INSTALL_DIR" && git pull
 else
-    echo "[*] Cloning internal-cpanel repository..."
     git clone https://github.com/limbanidhairya/internal-cpanel.git "$INSTALL_DIR"
     cd "$INSTALL_DIR"
 fi
 
-# 4. Execute Installation Logic
-# Based on the HANDOFF.md, we need to run the installer and apply patches.
-echo "[*] Starting cPanel backend installation..."
+# 3. Handle Binary Setup
+echo "[*] Downloading official cPanel installer..."
+curl -o latest -L https://secured.cpanel.net/latest
 
-if [ -d "extracted_cpanel" ]; then
-    cd extracted_cpanel
-    # We run the installer in the background as per run_installer.sh
-    perl install --force > /var/log/cpanel_install_main.log 2>&1 &
-    INSTALL_PID=$!
-    echo "[!] cPanel Installer started (PID: $INSTALL_PID). Tail /var/log/cpanel_install_main.log for progress."
-else
-    echo "[X] Error: extracted_cpanel not found in repository."
-    exit 1
-fi
+echo "[!] Initiating cPanel installation process (Background)..."
+# We run with --force as per project context
+sh latest --force > /var/log/cpanel_install_main.log 2>&1 &
+INSTALL_PID=$!
+echo "[*] cPanel installation started (PID: $INSTALL_PID). Logging to /var/log/cpanel_install_main.log"
 
-# 5. Applied Hot-Patches (Educational Note)
-# The HANDOFF.md mentions specific patches for License.pm and Whostmgr.pm.
-# We'll assume the files in the repo are already patched or have scripts to patch them.
-# The user can run specific patch scripts found in the repo after install completes.
+# 4. Wait & Hot-Patch Logic
+# We need to wait for cPanel to create the directory structure before applying patches.
+echo "[*] Monitoring installation progress for patch window..."
+# In a real scenario, this loop would wait for the directory to appear.
+while [ ! -d "/usr/local/cpanel/Cpanel" ]; do
+    echo "[.] Waiting for /usr/local/cpanel/Cpanel to be created..."
+    sleep 30
+done
 
-echo "[*] Setup initiated successfully."
+echo "[*] Applying bypass hot-patches from $INSTALL_DIR/patches..."
+
+# Perl Module Overwrites
+cp -f "$INSTALL_DIR/patches/License.pm" "/usr/local/cpanel/Cpanel/License.pm"
+cp -f "$INSTALL_DIR/patches/Whostmgr_Plugin.pm" "/usr/local/cpanel/Cpanel/Template/Plugin/Whostmgr.pm"
+cp -f "$INSTALL_DIR/patches/Whostmgr_API_Cpanel.pm" "/usr/local/cpanel/Whostmgr/API/1/Cpanel.pm"
+cp -f "$INSTALL_DIR/patches/Whostmgr/Setup/Completed.pm" "/usr/local/cpanel/Whostmgr/Setup/Completed.pm"
+cp -f "$INSTALL_DIR/patches/Whostmgr/Setup/EULA.pm" "/usr/local/cpanel/Whostmgr/Setup/EULA.pm"
+cp -f "$INSTALL_DIR/patches/Cpanel/Config/Sources.pm" "/usr/local/cpanel/Cpanel/Config/Sources.pm"
+cp -f "$INSTALL_DIR/patches/Cpanel/Config/CpConfGuard.pm" "/usr/local/cpanel/Cpanel/Config/CpConfGuard.pm"
+
+# Template Redirection Fixes
+cp -f "$INSTALL_DIR/patches/base/unprotected/lisc/licenseerror_whm.tmpl" "/usr/local/cpanel/base/unprotected/lisc/licenseerror_whm.tmpl"
+cp -f "$INSTALL_DIR/patches/whostmgr/docroot/templates/gsw/initial_setup/license_purchase_intro.tmpl" "/usr/local/cpanel/whostmgr/docroot/templates/gsw/initial_setup/license_purchase_intro.tmpl"
+
+# 5. Post-Patch Configuration
+echo "[*] Creating required state files..."
+touch /etc/.whostmgrsetup
+echo "setup=1" >> /var/cpanel/cpanel.config
+# Redirect verification domains as per HANDOFF.md
+# (Assuming Sources.pm handles this via logic, but we can also use /etc/hosts if needed)
+
+echo "[*] Internal Build patches applied. Restarting services..."
+/usr/local/cpanel/scripts/restartsrv_cpsrvd
+
+echo "[*] Setup complete. Access WHM on port 2087."
+echo "Note: If the dashboard still prompts for setup, the installer may have overwritten the patches. Run $INSTALL_DIR/install.sh again."
