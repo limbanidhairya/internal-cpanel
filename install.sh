@@ -6,6 +6,9 @@
 echo "[*] Initializing Internal cPanel Build Setup..."
 
 # 1. System Preparation
+# Ensure DNS is working (Add Google DNS temporarily as backup)
+echo "nameserver 8.8.8.8" >> /etc/resolv.conf
+
 if [ -f /etc/os-release ]; then
     . /etc/os-release
     OS_ID=$ID
@@ -66,7 +69,10 @@ cp -f "$INSTALL_DIR/patches/Cpanel/Config/CpConfGuard.pm" "/usr/local/cpanel/Cpa
 
 # Template Redirection Fixes
 cp -f "$INSTALL_DIR/patches/base/unprotected/lisc/licenseerror_whm.tmpl" "/usr/local/cpanel/base/unprotected/lisc/licenseerror_whm.tmpl"
-cp -f "$INSTALL_DIR/patches/whostmgr/docroot/templates/gsw/initial_setup/license_purchase_intro.tmpl" "/usr/local/cpanel/whostmgr/docroot/templates/gsw/initial_setup/license_purchase_intro.tmpl"
+
+# Fix case-sensitive path for Whostmgr templates
+mkdir -p /usr/local/cpanel/whostmgr/docroot/templates/gsw/initial_setup
+cp -f "$INSTALL_DIR/patches/Whostmgr/docroot/templates/gsw/initial_setup/license_purchase_intro.tmpl" "/usr/local/cpanel/whostmgr/docroot/templates/gsw/initial_setup/license_purchase_intro.tmpl"
 
 # 5. Post-Patch Configuration
 echo "[*] Creating required state files..."
