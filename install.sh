@@ -103,12 +103,19 @@ cp -f "$INSTALL_DIR/patches/Whostmgr/docroot/templates/gsw/initial_setup/license
 # 5. Post-Patch Configuration
 echo "[*] Creating required state files..."
 touch /etc/.whostmgrsetup
-echo "setup=1" >> /var/cpanel/cpanel.config
-# Redirect verification domains as per HANDOFF.md
-# (Assuming Sources.pm handles this via logic, but we can also use /etc/hosts if needed)
+# Ensure setup=1 is set correctly in cpanel.config
+if [ -f /var/cpanel/cpanel.config ]; then
+    sed -i 's/setup=.*/setup=1/' /var/cpanel/cpanel.config
+    grep -q "setup=1" /var/cpanel/cpanel.config || echo "setup=1" >> /var/cpanel/cpanel.config
+else
+    echo "setup=1" > /var/cpanel/cpanel.config
+fi
 
-echo "[*] Internal Build patches applied. Restarting services..."
+echo "[*] Internal Build patches applied. Force restarting services..."
+# Kill dormant cpsrvd to ensure new modules load
+pkill -9 cpsrvd || true
 /usr/local/cpanel/scripts/restartsrv_cpsrvd
+
 
 # 6. Firewall Configuration
 echo "[*] Configuring firewall for WHM/cPanel access..."
