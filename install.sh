@@ -20,6 +20,14 @@ else
 fi
 
 echo "[*] Detected $ID. Updating package list..."
+# Handle apt locks
+if [ "$OS_ID" == "ubuntu" ] || [ "$OS_ID" == "debian" ]; then
+    echo "[*] Waiting for other package managers to finish..."
+    while fuser /var/lib/dpkg/lock-frontend >/dev/null 2>&1 ; do
+        sleep 5
+    done
+fi
+
 case "$OS_ID" in
     ubuntu|debian)
         apt-get update -y && apt-get install -y git perl python3 curl wget
@@ -102,5 +110,20 @@ echo "setup=1" >> /var/cpanel/cpanel.config
 echo "[*] Internal Build patches applied. Restarting services..."
 /usr/local/cpanel/scripts/restartsrv_cpsrvd
 
-echo "[*] Setup complete. Access WHM on port 2087."
+# 6. Firewall Configuration
+echo "[*] Configuring firewall for WHM/cPanel access..."
+if command -v ufw >/dev/null 2>&1; then
+    ufw allow 2087/tcp
+    ufw allow 2086/tcp
+    ufw allow 2083/tcp
+    ufw allow 2082/tcp
+    ufw reload
+elif command -v iptables >/dev/null 2>&1; then
+    iptables -I INPUT -p tcp --dport 2087 -j ACCEPT
+    iptables -I INPUT -p tcp --dport 2086 -j ACCEPT
+    iptables -I INPUT -p tcp --dport 2083 -j ACCEPT
+    iptables -I INPUT -p tcp --dport 2082 -j ACCEPT
+fi
+
+echo "[*] Setup complete. Access WHM on https://103.233.65.233:2087"
 echo "Note: If the dashboard still prompts for setup, the installer may have overwritten the patches. Run $INSTALL_DIR/install.sh again."
