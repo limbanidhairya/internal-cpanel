@@ -6,8 +6,10 @@
 echo "[*] Initializing Internal cPanel Build Setup..."
 
 # 1. System Preparation
-# Ensure DNS is working (Add Google DNS temporarily as backup)
-echo "nameserver 8.8.8.8" >> /etc/resolv.conf
+# Ensure DNS is working (Add Google DNS as primary)
+echo -e "nameserver 8.8.8.8\nnameserver 1.1.1.1" > /etc/resolv.conf
+# Attempt to prevent overwrite
+chattr +i /etc/resolv.conf 2>/dev/null
 
 if [ -f /etc/os-release ]; then
     . /etc/os-release
@@ -39,10 +41,19 @@ fi
 
 # 3. Handle Binary Setup
 echo "[*] Downloading official cPanel installer..."
-curl -o latest -L https://secured.cpanel.net/latest
+if ! curl -o latest -L https://secured.cpanel.net/latest; then
+    echo "[X] Error: Could not download cPanel installer. DNS or Network issue."
+    # Temporary fallback: try to resolve via IP if possible or exit
+    exit 1
+fi
+
+if [ ! -s "latest" ]; then
+    echo "[X] Error: Downloaded installer is empty."
+    exit 1
+fi
 
 echo "[!] Initiating cPanel installation process (Background)..."
-# We run with --force as per project context
+chmod +x latest
 sh latest --force > /var/log/cpanel_install_main.log 2>&1 &
 INSTALL_PID=$!
 echo "[*] cPanel installation started (PID: $INSTALL_PID). Logging to /var/log/cpanel_install_main.log"
@@ -50,29 +61,36 @@ echo "[*] cPanel installation started (PID: $INSTALL_PID). Logging to /var/log/c
 # 4. Wait & Hot-Patch Logic
 # We need to wait for cPanel to create the directory structure before applying patches.
 echo "[*] Monitoring installation progress for patch window..."
-# In a real scenario, this loop would wait for the directory to appear.
+MAX_RETRIES=20
+COUNT=0
 while [ ! -d "/usr/local/cpanel/Cpanel" ]; do
-    echo "[.] Waiting for /usr/local/cpanel/Cpanel to be created..."
+    echo "[.] Waiting for /usr/local/cpanel/Cpanel to be created... ($COUNT/$MAX_RETRIES)"
     sleep 30
+    COUNT=$((COUNT+1))
+    if [ $COUNT -ge $MAX_RETRIES ]; then
+        echo "[X] Timeout: /usr/local/cpanel/Cpanel never appeared. cPanel install likely failed."
+        echo "[*] Check /var/log/cpanel_install_main.log for details."
+        exit 1
+    fi
 done
 
 echo "[*] Applying bypass hot-patches from $INSTALL_DIR/patches..."
 
-# Perl Module Overwrites
-cp -f "$INSTALL_DIR/patches/License.pm" "/usr/local/cpanel/Cpanel/License.pm"
-cp -f "$INSTALL_DIR/patches/Whostmgr_Plugin.pm" "/usr/local/cpanel/Cpanel/Template/Plugin/Whostmgr.pm"
-cp -f "$INSTALL_DIR/patches/Whostmgr_API_Cpanel.pm" "/usr/local/cpanel/Whostmgr/API/1/Cpanel.pm"
-cp -f "$INSTALL_DIR/patches/Whostmgr/Setup/Completed.pm" "/usr/local/cpanel/Whostmgr/Setup/Completed.pm"
-cp -f "$INSTALL_DIR/patches/Whostmgr/Setup/EULA.pm" "/usr/local/cpanel/Whostmgr/Setup/EULA.pm"
-cp -f "$INSTALL_DIR/patches/Cpanel/Config/Sources.pm" "/usr/local/cpanel/Cpanel/Config/Sources.pm"
-cp -f "$INSTALL_DIR/patches/Cpanel/Config/CpConfGuard.pm" "/usr/local/cpanel/Cpanel/Config/CpConfGuard.pm"
+# Perl Module Overwrites (Ensure case-sensitive matching)
+cp -f "$INSTALL_DIR/patches/License.pm" "/usr/local/cpanel/Cpanel/License.pm" || echo "[!] License.pm failed"
+cp -f "$INSTALL_DIR/patches/Whostmgr_Plugin.pm" "/usr/local/cpanel/Cpanel/Template/Plugin/Whostmgr.pm" || echo "[!] Whostmgr_Plugin.pm failed"
+cp -f "$INSTALL_DIR/patches/Whostmgr_API_Cpanel.pm" "/usr/local/cpanel/Whostmgr/API/1/Cpanel.pm" || echo "[!] Whostmgr_API_Cpanel.pm failed"
+cp -f "$INSTALL_DIR/patches/Whostmgr/Setup/Completed.pm" "/usr/local/cpanel/Whostmgr/Setup/Completed.pm" || echo "[!] Completed.pm failed"
+cp -f "$INSTALL_DIR/patches/Whostmgr/Setup/EULA.pm" "/usr/local/cpanel/Whostmgr/Setup/EULA.pm" || echo "[!] EULA.pm failed"
+cp -f "$INSTALL_DIR/patches/Cpanel/Config/Sources.pm" "/usr/local/cpanel/Cpanel/Config/Sources.pm" || echo "[!] Sources.pm failed"
+cp -f "$INSTALL_DIR/patches/Cpanel/Config/CpConfGuard.pm" "/usr/local/cpanel/Cpanel/Config/CpConfGuard.pm" || echo "[!] CpConfGuard.pm failed"
 
 # Template Redirection Fixes
-cp -f "$INSTALL_DIR/patches/base/unprotected/lisc/licenseerror_whm.tmpl" "/usr/local/cpanel/base/unprotected/lisc/licenseerror_whm.tmpl"
+cp -f "$INSTALL_DIR/patches/base/unprotected/lisc/licenseerror_whm.tmpl" "/usr/local/cpanel/base/unprotected/lisc/licenseerror_whm.tmpl" || echo "[!] licenseerror_whm.tmpl failed"
 
 # Fix case-sensitive path for Whostmgr templates
 mkdir -p /usr/local/cpanel/whostmgr/docroot/templates/gsw/initial_setup
-cp -f "$INSTALL_DIR/patches/Whostmgr/docroot/templates/gsw/initial_setup/license_purchase_intro.tmpl" "/usr/local/cpanel/whostmgr/docroot/templates/gsw/initial_setup/license_purchase_intro.tmpl"
+cp -f "$INSTALL_DIR/patches/Whostmgr/docroot/templates/gsw/initial_setup/license_purchase_intro.tmpl" "/usr/local/cpanel/whostmgr/docroot/templates/gsw/initial_setup/license_purchase_intro.tmpl" || echo "[!] license_purchase_intro.tmpl failed"
 
 # 5. Post-Patch Configuration
 echo "[*] Creating required state files..."
