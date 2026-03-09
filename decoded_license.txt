@@ -1,0 +1,31 @@
+--- cPanel Decoded License Fragments (Extraction v11.3) ---
+
+Objective: Provide raw trial metadata and decoded signatures for external testing.
+
+[SYSTEM CONTEXT]
+Primary IP: 122.171.23.58
+WSL IP: 192.168.125.185
+Hostname: 10-255-255-254.cprapid.com
+System MAC: 00:15:5d:01:cd:24
+cPanel Version: 134.0.10 (build 10)
+
+[DECODED SIGNATURES (Base64 Fragments from cpanel.lisc)]
+- Fragment A: lqM0cZYHlXGWa6pxl -> [Decoded: ......]
+- Fragment B: XGZLoEAM2eqeZdQbXGZLoEAl -> [Decoded: ......]
+- Data Structure: cid=265, License Version: 31
+
+[ORIGINAL LICENSE FILES - RAW DATA]
+- Path: /usr/local/cpanel/cpanel.lisc
+- Path: /var/cpanel/license_state/trial
+- Path: /var/cpanel/license_state/state
+
+[EXPIRATION STATUS]
+Indefinite / Permanent (N/A in UI)
+Year: 2099
+Status: Active (Tier 4 / VPS_Pro)
+
+[EXTERNAL USE INSTRUCTIONS]
+To use this trial context on other servers, ensure you:
+1. Spoof the System MAC to '00:15:5d:01:cd:24'.
+2. Use the provided license key fragments.
+3. Block local validation phone-homes.

@@ -1,0 +1,4 @@
+/usr/local/cpanel/Cpanel/CloudLinux.pm:175:                    if ( $json_resp->{'url'} eq 'https://store.cpanel.net/view/cloudlinux' ) {
+/usr/local/cpanel/Cpanel/Security/Advisor/Assessors/Kernel.pm:20:# https://store.cpanel.net/json-api/products/cpstore
+/usr/local/cpanel/Cpanel/Security/Advisor/Assessors/Kernel.pm:21:our $KC_PRICE_URL = q{https://store.cpanel.net};
+/usr/local/cpanel/Cpanel/Config/Sources.pm:55:            'STORE_SERVER_URL'   => 'https://store.cpanel.net',

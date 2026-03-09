@@ -1,0 +1,181 @@
+execve("/usr/local/cpanel/whostmgr/bin/whostmgr3", ["/usr/local/cpanel/whostmgr/bin/w"...], 0x7fff90a6cbb0 /* 21 vars */) = 0
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/lib/x86_64-linux/auto/B/B.so", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=97072, ...}, AT_EMPTY_PATH) = 0
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/lib/x86_64-linux/auto/Fcntl/Fcntl.so", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=22752, ...}, AT_EMPTY_PATH) = 0
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/cpanel-lib/x86_64-linux/auto/Crypt/Passwd/XS/XS.so", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=35296, ...}, AT_EMPTY_PATH) = 0
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/cpanel-lib/x86_64-linux/auto/JSON/XS/XS.so", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=47776, ...}, AT_EMPTY_PATH) = 0
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/lib/x86_64-linux/auto/attributes/attributes.so", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=14616, ...}, AT_EMPTY_PATH) = 0
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/cpanel-lib/x86_64-linux/auto/URI/XSEscape/XSEscape.so", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=22832, ...}, AT_EMPTY_PATH) = 0
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/cpanel-lib/x86_64-linux/auto/CDB_File/CDB_File.so", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=27136, ...}, AT_EMPTY_PATH) = 0
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/lib/x86_64-linux/auto/Cwd/Cwd.so", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=22904, ...}, AT_EMPTY_PATH) = 0
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/lib/x86_64-linux/auto/List/Util/Util.so", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=51976, ...}, AT_EMPTY_PATH) = 0
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/cpanel-lib/x86_64-linux/auto/Template/Stash/XS/XS.so", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=31448, ...}, AT_EMPTY_PATH) = 0
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/lib/x86_64-linux/auto/IO/IO.so", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=22984, ...}, AT_EMPTY_PATH) = 0
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/lib/x86_64-linux/auto/Socket/Socket.so", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=47632, ...}, AT_EMPTY_PATH) = 0
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/lib/x86_64-linux/auto/mro/mro.so", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=23128, ...}, AT_EMPTY_PATH) = 0
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/cpanel-lib/x86_64-linux/auto/Clone/Clone.so", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=14688, ...}, AT_EMPTY_PATH) = 0
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/lib/x86_64-linux/auto/Time/HiRes/HiRes.so", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=31152, ...}, AT_EMPTY_PATH) = 0
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/cpanel-lib/x86_64-linux/auto/Proc/FastSpawn/FastSpawn.so", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=14624, ...}, AT_EMPTY_PATH) = 0
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/cpanel-lib/x86_64-linux/auto/Variable/Magic/Magic.so", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=27432, ...}, AT_EMPTY_PATH) = 0
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/cpanel-lib/x86_64-linux/auto/Package/Stash/XS/XS.so", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=31256, ...}, AT_EMPTY_PATH) = 0
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/cpanel-lib/x86_64-linux/auto/XString/XString.so", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=14520, ...}, AT_EMPTY_PATH) = 0
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/lib/x86_64-linux/auto/re/re.so", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=541232, ...}, AT_EMPTY_PATH) = 0
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/cpanel-lib/x86_64-linux/auto/Ref/Util/XS/XS.so", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=26672, ...}, AT_EMPTY_PATH) = 0
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/cpanel-lib/x86_64-linux/auto/Class/XSAccessor/XSAccessor.so", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=55896, ...}, AT_EMPTY_PATH) = 0
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/cpanel-lib/x86_64-linux/auto/List/MoreUtils/XS/XS.so", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=84672, ...}, AT_EMPTY_PATH) = 0
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/cpanel-lib/x86_64-linux/auto/Params/Util/Util.so", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=18720, ...}, AT_EMPTY_PATH) = 0
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/lib/x86_64-linux/auto/Storable/Storable.so", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=93224, ...}, AT_EMPTY_PATH) = 0
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/lib/x86_64-linux/auto/POSIX/POSIX.so", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=102088, ...}, AT_EMPTY_PATH) = 0
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/cpanel-lib/x86_64-linux/auto/DateTime/DateTime.so", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=18472, ...}, AT_EMPTY_PATH) = 0
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/cpanel-lib/x86_64-linux/auto/Params/Validate/XS/XS.so", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=39504, ...}, AT_EMPTY_PATH) = 0
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/lib/x86_64-linux/CORE/libperl.so", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=3489192, ...}, AT_EMPTY_PATH) = 0
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/lib/x86_64-linux/CORE/glibc-hwcaps/x86-64-v3/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/lib/x86_64-linux/CORE/glibc-hwcaps/x86-64-v3", 0x7ffe3aabb240, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/lib/x86_64-linux/CORE/glibc-hwcaps/x86-64-v2/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/lib/x86_64-linux/CORE/glibc-hwcaps/x86-64-v2", 0x7ffe3aabb240, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/lib/x86_64-linux/CORE/tls/x86_64/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/lib/x86_64-linux/CORE/tls/x86_64/x86_64", 0x7ffe3aabb240, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/lib/x86_64-linux/CORE/tls/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/lib/x86_64-linux/CORE/tls/x86_64", 0x7ffe3aabb240, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/lib/x86_64-linux/CORE/tls/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/lib/x86_64-linux/CORE/tls/x86_64", 0x7ffe3aabb240, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/lib/x86_64-linux/CORE/tls/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/lib/x86_64-linux/CORE/tls", 0x7ffe3aabb240, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/lib/x86_64-linux/CORE/x86_64/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/lib/x86_64-linux/CORE/x86_64/x86_64", 0x7ffe3aabb240, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/lib/x86_64-linux/CORE/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/lib/x86_64-linux/CORE/x86_64", 0x7ffe3aabb240, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/lib/x86_64-linux/CORE/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/lib/x86_64-linux/CORE/x86_64", 0x7ffe3aabb240, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/lib/x86_64-linux/CORE/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/lib/x86_64-linux/CORE", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=37700, ...}, AT_EMPTY_PATH) = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=2220400, ...}, AT_EMPTY_PATH) = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=940560, ...}, AT_EMPTY_PATH) = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libcrypt.so.1", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=198664, ...}, AT_EMPTY_PATH) = 0
+openat(AT_FDCWD, "/dev/urandom", O_RDONLY|O_CLOEXEC) = 3
+openat(AT_FDCWD, "/dev/urandom", O_RDONLY|O_CLOEXEC) = 3
+openat(AT_FDCWD, "/dev/urandom", O_RDONLY|O_CLOEXEC) = 3
+openat(AT_FDCWD, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=5712208, ...}, AT_EMPTY_PATH) = 0
+openat(AT_FDCWD, "/usr/share/locale/locale.alias", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2996, ...}, AT_EMPTY_PATH) = 0
+openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_IDENTIFICATION", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_IDENTIFICATION", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=258, ...}, AT_EMPTY_PATH) = 0
+openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache", O_RDONLY) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=27002, ...}, AT_EMPTY_PATH) = 0
+openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_MEASUREMENT", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_MEASUREMENT", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=23, ...}, AT_EMPTY_PATH) = 0
+openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_TELEPHONE", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_TELEPHONE", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=47, ...}, AT_EMPTY_PATH) = 0
+openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_ADDRESS", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_ADDRESS", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=127, ...}, AT_EMPTY_PATH) = 0
+openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_NAME", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_NAME", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=62, ...}, AT_EMPTY_PATH) = 0
+openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_PAPER", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_PAPER", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=34, ...}, AT_EMPTY_PATH) = 0
+openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_MESSAGES", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_MESSAGES", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_MESSAGES/SYS_LC_MESSAGES", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=48, ...}, AT_EMPTY_PATH) = 0
+openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_MONETARY", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_MONETARY", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=270, ...}, AT_EMPTY_PATH) = 0
+openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_COLLATE", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_COLLATE", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=1406, ...}, AT_EMPTY_PATH) = 0
+openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_TIME", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_TIME", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=3360, ...}, AT_EMPTY_PATH) = 0
+openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_NUMERIC", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_NUMERIC", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=50, ...}, AT_EMPTY_PATH) = 0
+openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_CTYPE", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_CTYPE", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=353616, ...}, AT_EMPTY_PATH) = 0
+newfstatat(AT_FDCWD, "/var/cpanel/log_stack_traces", 0x7d1005d5b200, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/var/cpanel/user_pw_cache/0", {st_mode=S_IFREG|0640, st_size=192, ...}, 0) = 0
+openat(AT_FDCWD, "/var/cpanel/user_pw_cache/0", O_RDONLY) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0640, st_size=192, ...}, AT_EMPTY_PATH) = 0
+openat(AT_FDCWD, "/var/cpanel/server_locale", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2, ...}, AT_EMPTY_PATH) = 0
+newfstatat(AT_FDCWD, "/var/cpanel/locale/en.cdb", {st_mode=S_IFREG|0644, st_size=2902467, ...}, 0) = 0
+openat(AT_FDCWD, "/var/cpanel/locale/en.cdb", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2902467, ...}, AT_EMPTY_PATH) = 0
+newfstatat(AT_FDCWD, "/usr/local/cpanel/Cpanel/Locale.pm", {st_mode=S_IFREG|0644, st_size=37569, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/local/cpanel/Cpanel/Locale", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 4
+newfstatat(4, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+openat(AT_FDCWD, "/var/cpanel/maketext_whitelist", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/var/cpanel/envtype", O_RDONLY) = 4
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=7, ...}, AT_EMPTY_PATH) = 0
+openat(AT_FDCWD, "/etc/localtime", O_RDONLY|O_CLOEXEC) = 4
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=285, ...}, AT_EMPTY_PATH) = 0
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=285, ...}, AT_EMPTY_PATH) = 0
+newfstatat(AT_FDCWD, "/etc/localtime", {st_mode=S_IFREG|0644, st_size=285, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/var/cpanel/dnsonly", 0x7d1005d5b200, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/etc/localtime", {st_mode=S_IFREG|0644, st_size=285, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/var/cpanel/dnsonly", 0x7d1005d5b200, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/var/cpanel/dnsonly", 0x7d1005d5b200, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/var/cpanel/leika.conf", 0x7d1005d5b200, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/var/cpanel/panel.ini", 0x7d1005d5b200, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/var/cpanel/panel.ini", 0x7d1005d5b200, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/var/cpanel/activate/2024-05.v01.GDPR.CPWHMEULA", {st_mode=S_IFREG|0644, st_size=0, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/etc/.whostmgrft", {st_mode=S_IFREG|0644, st_size=0, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/var/cpanel/feature_toggles/analytics_ui_includes", {st_mode=S_IFREG|0644, st_size=0, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/var/cpanel/whm/nvdata/root.yaml", {st_mode=S_IFREG|0644, st_size=64, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/var/cpanel/whm/nvdata/root.yaml", {st_mode=S_IFREG|0644, st_size=64, ...}, 0) = 0
+openat(AT_FDCWD, "/var/cpanel/whm/nvdata/root.cache", O_RDONLY) = 4
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=66, ...}, AT_EMPTY_PATH) = 0
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=66, ...}, AT_EMPTY_PATH) = 0
+newfstatat(AT_FDCWD, "/var/cpanel/whm/nvdata/root.yaml", {st_mode=S_IFREG|0644, st_size=64, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/var/cpanel/customizations/whm/includes/cp_analytics_whm.html.tt", {st_mode=S_IFREG|0644, st_size=29039, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/etc/localtime", {st_mode=S_IFREG|0644, st_size=285, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/etc/localtime", {st_mode=S_IFREG|0644, st_size=285, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/var/cpanel/webtemplates/root/english/errorpage.tmpl", 0x7d1005d5b200, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/var/cpanel/webtemplates/english/errorpage.tmpl", 0x7d1005d5b200, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/cpanel/etc/webtemplates/root/english/errorpage.tmpl", 0x7d1005d5b200, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/cpanel/etc/webtemplates/english/errorpage.tmpl", {st_mode=S_IFREG|0644, st_size=7423, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/cpanel/etc/webtemplates/english/errorpage.tmpl", {st_mode=S_IFREG|0644, st_size=7423, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/local/cpanel/etc/webtemplates/english/errorpage.tmpl", O_RDONLY) = 4
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=7423, ...}, AT_EMPTY_PATH) = 0
++++ exited with 0 +++

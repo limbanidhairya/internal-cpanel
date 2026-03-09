@@ -1,0 +1,16 @@
+/usr/local/cpanel/base/3rdparty/phpMyAdmin/vendor/code-lts/u2f-php-server/src/U2FServer.php
+/usr/local/cpanel/base/3rdparty/roundcube/plugins/kolab_sso/drivers/oauth2.php
+/usr/local/cpanel/3rdparty/perl/542/cpanel-lib/Crypt/PKCS10.pm
+/usr/local/cpanel/3rdparty/perl/542/cpanel-lib/Mail/DKIM/PublicKey.pm
+/usr/local/cpanel/3rdparty/perl/542/cpanel-lib/x86_64-linux/auto/CryptX/CryptX.so
+/usr/local/cpanel/3rdparty/perl/542/cpanel-lib/x86_64-linux/Crypt/OpenSSL/RSA.pm
+/usr/local/cpanel/3rdparty/perl/542/cpanel-lib/x86_64-linux/Crypt/PK/Ed25519.pm
+/usr/local/cpanel/3rdparty/perl/542/cpanel-lib/x86_64-linux/Crypt/PK/X25519.pm
+/usr/local/cpanel/3rdparty/perl/542/cpanel-lib/x86_64-linux/Crypt/PK/RSA.pm
+/usr/local/cpanel/3rdparty/perl/542/cpanel-lib/x86_64-linux/Crypt/PK/ECC.pm
+/usr/local/cpanel/3rdparty/perl/542/cpanel-lib/x86_64-linux/Crypt/PK/DSA.pm
+/usr/local/cpanel/3rdparty/wp-toolkit/plib/vendor/aws/aws-sdk-php/src/data/ivs-realtime/2020-07-14/api-2.json.php
+/usr/local/cpanel/3rdparty/wp-toolkit/plib/vendor/phpseclib/phpseclib/phpseclib/Crypt/RSA.php
+/usr/local/cpanel/3rdparty/wp-toolkit/plib/vendor/phpseclib/phpseclib/phpseclib/Math/BigInteger.php
+/usr/local/cpanel/3rdparty/wp-toolkit/plib/vendor/wp-cli/vendor/composer/composer/src/Composer/Util/TlsHelper.php
+/usr/local/cpanel/3rdparty/wp-toolkit/plib/vendor/wp-cli/vendor/composer/composer/src/Composer/Command/SelfUpdateCommand.php

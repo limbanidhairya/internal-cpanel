@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>WHM - Secure Redirect</title>
+    <script>
+        (function () {
+            var sessionToken = window.location.pathname.match(/cpsess[0-9]+/);
+            var base = sessionToken ? '/' + sessionToken[0] : '';
+            console.log('Redirecting to dashboard...');
+            window.location.href = base + '/scripts/command?app=dashboard';
+        })();
+    </script>
+</head>
+
+<body>
+    <div style="padding: 50px; text-align: center; font-family: sans-serif;">
+        <h2>Redirecting to WHM Dashboard...</h2>
+        <p>Please wait while the secure session is established.</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,626 @@
+execve("/usr/local/cpanel/whostmgr/bin/whostmgr10", ["/usr/local/cpanel/whostmgr/bin/w"...], 0x7fff4e3abb48 /* 21 vars */) = 0
+brk(NULL)                               = 0x40192000
+arch_prctl(0x3001 /* ARCH_??? */, 0x7ffd545e5440) = -1 EINVAL (Invalid argument)
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x71f5cfea2000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/lib/x86_64-linux/auto/B/B.so", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=97072, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 99112, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x71f5cfe89000
+mprotect(0x71f5cfe8f000, 61440, PROT_NONE) = 0
+mmap(0x71f5cfe8f000, 36864, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x71f5cfe8f000
+mmap(0x71f5cfe98000, 20480, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xf000) = 0x71f5cfe98000
+mmap(0x71f5cfe9e000, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x14000) = 0x71f5cfe9e000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/cpanel-lib/x86_64-linux/auto/JSON/XS/XS.so", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=47776, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 50120, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x71f5cfe7c000
+mprotect(0x71f5cfe7e000, 36864, PROT_NONE) = 0
+mmap(0x71f5cfe7e000, 24576, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x71f5cfe7e000
+mmap(0x71f5cfe84000, 8192, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x8000) = 0x71f5cfe84000
+mmap(0x71f5cfe87000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xa000) = 0x71f5cfe87000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/lib/x86_64-linux/auto/attributes/attributes.so", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=14616, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 16616, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x71f5cfe77000
+mmap(0x71f5cfe78000, 4096, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0x71f5cfe78000
+mmap(0x71f5cfe79000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x71f5cfe79000
+mmap(0x71f5cfe7a000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x71f5cfe7a000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/cpanel-lib/x86_64-linux/auto/URI/XSEscape/XSEscape.so", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=22832, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 24752, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x71f5cfe70000
+mprotect(0x71f5cfe72000, 12288, PROT_NONE) = 0
+mmap(0x71f5cfe72000, 4096, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x71f5cfe72000
+mmap(0x71f5cfe73000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x71f5cfe73000
+mmap(0x71f5cfe75000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x71f5cfe75000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/cpanel-lib/x86_64-linux/auto/CDB_File/CDB_File.so", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=27136, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 29136, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x71f5cfe68000
+mmap(0x71f5cfe6a000, 12288, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x71f5cfe6a000
+mmap(0x71f5cfe6d000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x5000) = 0x71f5cfe6d000
+mmap(0x71f5cfe6e000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x5000) = 0x71f5cfe6e000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/cpanel-lib/x86_64-linux/auto/Cpanel/Optimizer/Optimizer.so", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=40056, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x71f5cfe66000
+mmap(NULL, 42184, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x71f5cfe5b000
+mmap(0x71f5cfe5c000, 24576, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0x71f5cfe5c000
+mmap(0x71f5cfe62000, 8192, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x7000) = 0x71f5cfe62000
+mmap(0x71f5cfe64000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x8000) = 0x71f5cfe64000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/lib/x86_64-linux/auto/Cwd/Cwd.so", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=22904, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 24928, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x71f5cfe54000
+mmap(0x71f5cfe56000, 8192, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x71f5cfe56000
+mmap(0x71f5cfe58000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x71f5cfe58000
+mmap(0x71f5cfe59000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x71f5cfe59000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/lib/x86_64-linux/auto/List/Util/Util.so", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=51976, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 54080, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x71f5cfe46000
+mmap(0x71f5cfe49000, 28672, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x71f5cfe49000
+mmap(0x71f5cfe50000, 8192, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xa000) = 0x71f5cfe50000
+mmap(0x71f5cfe52000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xb000) = 0x71f5cfe52000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/cpanel-lib/x86_64-linux/auto/Template/Stash/XS/XS.so", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=31448, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 33368, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x71f5cfe3d000
+mprotect(0x71f5cfe3f000, 20480, PROT_NONE) = 0
+mmap(0x71f5cfe3f000, 12288, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x71f5cfe3f000
+mmap(0x71f5cfe42000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x5000) = 0x71f5cfe42000
+mmap(0x71f5cfe44000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x71f5cfe44000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/lib/x86_64-linux/auto/IO/IO.so", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=22984, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 24984, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x71f5cfe36000
+mmap(0x71f5cfe38000, 8192, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x71f5cfe38000
+mmap(0x71f5cfe3a000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x71f5cfe3a000
+mmap(0x71f5cfe3b000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x71f5cfe3b000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/lib/x86_64-linux/auto/Socket/Socket.so", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=47632, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x71f5cfe34000
+mmap(NULL, 49552, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x71f5cfe27000
+mprotect(0x71f5cfe2a000, 28672, PROT_NONE) = 0
+mmap(0x71f5cfe2a000, 16384, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x71f5cfe2a000
+mmap(0x71f5cfe2e000, 8192, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x7000) = 0x71f5cfe2e000
+mmap(0x71f5cfe31000, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x9000) = 0x71f5cfe31000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/lib/x86_64-linux/auto/mro/mro.so", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=23128, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 25048, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x71f5cfe20000
+mmap(0x71f5cfe22000, 8192, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x71f5cfe22000
+mmap(0x71f5cfe24000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x71f5cfe24000
+mmap(0x71f5cfe25000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x71f5cfe25000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/cpanel-lib/x86_64-linux/auto/Clone/Clone.so", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=14688, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 16688, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x71f5cfe1b000
+mmap(0x71f5cfe1c000, 4096, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0x71f5cfe1c000
+mmap(0x71f5cfe1d000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x71f5cfe1d000
+mmap(0x71f5cfe1e000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x71f5cfe1e000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/lib/x86_64-linux/auto/Time/HiRes/HiRes.so", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=31152, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 33152, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x71f5cfe12000
+mmap(0x71f5cfe14000, 12288, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x71f5cfe14000
+mmap(0x71f5cfe17000, 8192, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x5000) = 0x71f5cfe17000
+mmap(0x71f5cfe19000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x71f5cfe19000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/cpanel-lib/x86_64-linux/auto/Variable/Magic/Magic.so", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=27432, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 29960, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x71f5cfe0a000
+mmap(0x71f5cfe0c000, 12288, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x71f5cfe0c000
+mmap(0x71f5cfe0f000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x5000) = 0x71f5cfe0f000
+mmap(0x71f5cfe10000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x5000) = 0x71f5cfe10000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/cpanel-lib/x86_64-linux/auto/Package/Stash/XS/XS.so", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=31256, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x71f5cfe08000
+mmap(NULL, 33304, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x71f5cfdff000
+mmap(0x71f5cfe01000, 12288, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x71f5cfe01000
+mmap(0x71f5cfe04000, 8192, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x5000) = 0x71f5cfe04000
+mmap(0x71f5cfe06000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x71f5cfe06000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/cpanel-lib/x86_64-linux/auto/XString/XString.so", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=14520, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 16520, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x71f5cfdfa000
+mmap(0x71f5cfdfb000, 4096, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0x71f5cfdfb000
+mmap(0x71f5cfdfc000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x71f5cfdfc000
+mmap(0x71f5cfdfd000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x71f5cfdfd000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/lib/x86_64-linux/auto/re/re.so", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=541232, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 543152, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x71f5cfd75000
+mmap(0x71f5cfd7c000, 352256, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x7000) = 0x71f5cfd7c000
+mmap(0x71f5cfdd2000, 155648, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x5d000) = 0x71f5cfdd2000
+mmap(0x71f5cfdf8000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x82000) = 0x71f5cfdf8000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/cpanel-lib/x86_64-linux/auto/Ref/Util/XS/XS.so", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=26672, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 30512, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x71f5cfd6d000
+mmap(0x71f5cfd6e000, 12288, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0x71f5cfd6e000
+mmap(0x71f5cfd71000, 8192, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x71f5cfd71000
+mmap(0x71f5cfd73000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x5000) = 0x71f5cfd73000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/cpanel-lib/x86_64-linux/auto/Class/XSAccessor/XSAccessor.so", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=55896, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 57960, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x71f5cfd5e000
+mmap(0x71f5cfd61000, 28672, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x71f5cfd61000
+mmap(0x71f5cfd68000, 12288, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xa000) = 0x71f5cfd68000
+mmap(0x71f5cfd6b000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xc000) = 0x71f5cfd6b000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/cpanel-lib/x86_64-linux/auto/List/MoreUtils/XS/XS.so", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=84672, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x71f5cfd5c000
+mmap(NULL, 86672, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x71f5cfd46000
+mmap(0x71f5cfd49000, 57344, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x71f5cfd49000
+mmap(0x71f5cfd57000, 12288, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x11000) = 0x71f5cfd57000
+mmap(0x71f5cfd5a000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x13000) = 0x71f5cfd5a000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/cpanel-lib/x86_64-linux/auto/Params/Util/Util.so", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=18720, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 20720, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x71f5cfd40000
+mmap(0x71f5cfd41000, 8192, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0x71f5cfd41000
+mmap(0x71f5cfd43000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x71f5cfd43000
+mmap(0x71f5cfd44000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x71f5cfd44000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/lib/x86_64-linux/auto/Storable/Storable.so", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=93224, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 95152, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x71f5cfd28000
+mmap(0x71f5cfd2b000, 65536, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x71f5cfd2b000
+mmap(0x71f5cfd3b000, 12288, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x13000) = 0x71f5cfd3b000
+mmap(0x71f5cfd3e000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x15000) = 0x71f5cfd3e000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/lib/x86_64-linux/auto/Fcntl/Fcntl.so", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=22752, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 24832, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x71f5cfd21000
+mprotect(0x71f5cfd23000, 12288, PROT_NONE) = 0
+mmap(0x71f5cfd23000, 4096, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x71f5cfd23000
+mmap(0x71f5cfd24000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x71f5cfd24000
+mmap(0x71f5cfd26000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x71f5cfd26000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/lib/x86_64-linux/auto/POSIX/POSIX.so", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=102088, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 104008, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x71f5cfd07000
+mprotect(0x71f5cfd0e000, 61440, PROT_NONE) = 0
+mmap(0x71f5cfd0e000, 40960, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x7000) = 0x71f5cfd0e000
+mmap(0x71f5cfd18000, 16384, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x11000) = 0x71f5cfd18000
+mmap(0x71f5cfd1d000, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x15000) = 0x71f5cfd1d000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/cpanel-lib/x86_64-linux/auto/DateTime/DateTime.so", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=18472, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x71f5cfd05000
+mmap(NULL, 20624, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x71f5cfcff000
+mmap(0x71f5cfd00000, 8192, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0x71f5cfd00000
+mmap(0x71f5cfd02000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x71f5cfd02000
+mmap(0x71f5cfd03000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x71f5cfd03000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/cpanel-lib/x86_64-linux/auto/Params/Validate/XS/XS.so", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=39504, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 41512, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x71f5cfcf4000
+mmap(0x71f5cfcf6000, 20480, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x71f5cfcf6000
+mmap(0x71f5cfcfb000, 8192, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x7000) = 0x71f5cfcfb000
+mmap(0x71f5cfcfd000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x8000) = 0x71f5cfcfd000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/cpanel-lib/x86_64-linux/auto/Char/Replace/Replace.so", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=14552, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 16552, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x71f5cfcef000
+mmap(0x71f5cfcf0000, 4096, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0x71f5cfcf0000
+mmap(0x71f5cfcf1000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x71f5cfcf1000
+mmap(0x71f5cfcf2000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x71f5cfcf2000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/cpanel-lib/x86_64-linux/auto/Colon/Config/Config.so", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=14368, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 16520, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x71f5cfcea000
+mmap(0x71f5cfceb000, 4096, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0x71f5cfceb000
+mmap(0x71f5cfcec000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x71f5cfcec000
+mmap(0x71f5cfced000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x71f5cfced000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/lib/x86_64-linux/auto/MIME/Base64/Base64.so", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=18664, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 20664, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x71f5cfce4000
+mmap(0x71f5cfce5000, 8192, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0x71f5cfce5000
+mmap(0x71f5cfce7000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x71f5cfce7000
+mmap(0x71f5cfce8000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x71f5cfce8000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/lib/x86_64-linux/CORE/libperl.so", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=3489192, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x71f5cfce2000
+mmap(NULL, 3519696, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x71f5cf800000
+mprotect(0x71f5cf859000, 3039232, PROT_NONE) = 0
+mmap(0x71f5cf859000, 1175552, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x59000) = 0x71f5cf859000
+mmap(0x71f5cf978000, 1859584, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x178000) = 0x71f5cf978000
+mmap(0x71f5cfb3f000, 90112, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x33e000) = 0x71f5cfb3f000
+mmap(0x71f5cfb55000, 25808, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x71f5cfb55000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/lib/x86_64-linux/CORE/glibc-hwcaps/x86-64-v3/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/lib/x86_64-linux/CORE/glibc-hwcaps/x86-64-v3", 0x7ffd545e4280, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/lib/x86_64-linux/CORE/glibc-hwcaps/x86-64-v2/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/lib/x86_64-linux/CORE/glibc-hwcaps/x86-64-v2", 0x7ffd545e4280, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/lib/x86_64-linux/CORE/tls/x86_64/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/lib/x86_64-linux/CORE/tls/x86_64/x86_64", 0x7ffd545e4280, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/lib/x86_64-linux/CORE/tls/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/lib/x86_64-linux/CORE/tls/x86_64", 0x7ffd545e4280, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/lib/x86_64-linux/CORE/tls/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/lib/x86_64-linux/CORE/tls/x86_64", 0x7ffd545e4280, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/lib/x86_64-linux/CORE/tls/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/lib/x86_64-linux/CORE/tls", 0x7ffd545e4280, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/lib/x86_64-linux/CORE/x86_64/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/lib/x86_64-linux/CORE/x86_64/x86_64", 0x7ffd545e4280, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/lib/x86_64-linux/CORE/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/lib/x86_64-linux/CORE/x86_64", 0x7ffd545e4280, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/lib/x86_64-linux/CORE/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/lib/x86_64-linux/CORE/x86_64", 0x7ffd545e4280, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/lib/x86_64-linux/CORE/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/cpanel/3rdparty/perl/542/lib/x86_64-linux/CORE", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=37700, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 37700, PROT_READ, MAP_PRIVATE, 3, 0) = 0x71f5cfcd8000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0"..., 832) = 832
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0"..., 48, 848) = 48
+pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\t\\{\241H\256\312\201f\200\221\367\30\4px"..., 68, 896) = 68
+newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=2220400, ...}, AT_EMPTY_PATH) = 0
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+mmap(NULL, 2264656, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x71f5cf400000
+mprotect(0x71f5cf428000, 2023424, PROT_NONE) = 0
+mmap(0x71f5cf428000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x71f5cf428000
+mmap(0x71f5cf5bd000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x71f5cf5bd000
+mmap(0x71f5cf616000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x215000) = 0x71f5cf616000
+mmap(0x71f5cf61c000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x71f5cf61c000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=940560, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 942344, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x71f5cfbf1000
+mmap(0x71f5cfbff000, 507904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe000) = 0x71f5cfbff000
+mmap(0x71f5cfc7b000, 372736, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x8a000) = 0x71f5cfc7b000
+mmap(0x71f5cfcd6000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe4000) = 0x71f5cfcd6000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libcrypt.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@ \0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=198664, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 233888, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x71f5cfbb7000
+mprotect(0x71f5cfbb9000, 188416, PROT_NONE) = 0
+mmap(0x71f5cfbb9000, 81920, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x71f5cfbb9000
+mmap(0x71f5cfbcd000, 102400, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x16000) = 0x71f5cfbcd000
+mmap(0x71f5cfbe7000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2f000) = 0x71f5cfbe7000
+mmap(0x71f5cfbe9000, 29088, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x71f5cfbe9000
+close(3)                                = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x71f5cfbb5000
+mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x71f5cfbb2000
+arch_prctl(ARCH_SET_FS, 0x71f5cfbb2740) = 0
+set_tid_address(0x71f5cfbb2a10)         = 76119
+set_robust_list(0x71f5cfbb2a20, 24)     = 0
+rseq(0x71f5cfbb30e0, 0x20, 0, 0x53053053) = 0
+mprotect(0x71f5cf616000, 16384, PROT_READ) = 0
+mprotect(0x71f5cfbe7000, 4096, PROT_READ) = 0
+mprotect(0x71f5cfcd6000, 4096, PROT_READ) = 0
+mprotect(0x71f5cfb3f000, 69632, PROT_READ) = 0
+mprotect(0x71f5cfce8000, 4096, PROT_READ) = 0
+mprotect(0x71f5cfced000, 4096, PROT_READ) = 0
+mprotect(0x71f5cfcf2000, 4096, PROT_READ) = 0
+mprotect(0x71f5cfcfd000, 4096, PROT_READ) = 0
+mprotect(0x71f5cfd03000, 4096, PROT_READ) = 0
+mprotect(0x71f5cfd1d000, 12288, PROT_READ) = 0
+mprotect(0x71f5cfd26000, 4096, PROT_READ) = 0
+mprotect(0x71f5cfd3e000, 4096, PROT_READ) = 0
+mprotect(0x71f5cfd44000, 4096, PROT_READ) = 0
+mprotect(0x71f5cfd5a000, 4096, PROT_READ) = 0
+mprotect(0x71f5cfd6b000, 4096, PROT_READ) = 0
+mprotect(0x71f5cfd73000, 4096, PROT_READ) = 0
+mprotect(0x71f5cfdf8000, 4096, PROT_READ) = 0
+mprotect(0x71f5cfdfd000, 4096, PROT_READ) = 0
+mprotect(0x71f5cfe06000, 4096, PROT_READ) = 0
+mprotect(0x71f5cfe10000, 4096, PROT_READ) = 0
+mprotect(0x71f5cfe19000, 4096, PROT_READ) = 0
+mprotect(0x71f5cfe1e000, 4096, PROT_READ) = 0
+mprotect(0x71f5cfe25000, 4096, PROT_READ) = 0
+mprotect(0x71f5cfe31000, 8192, PROT_READ) = 0
+mprotect(0x71f5cfe3b000, 4096, PROT_READ) = 0
+mprotect(0x71f5cfe44000, 4096, PROT_READ) = 0
+mprotect(0x71f5cfe52000, 4096, PROT_READ) = 0
+mprotect(0x71f5cfe59000, 4096, PROT_READ) = 0
+mprotect(0x71f5cfe64000, 4096, PROT_READ) = 0
+mprotect(0x71f5cfe6e000, 4096, PROT_READ) = 0
+mprotect(0x71f5cfe75000, 4096, PROT_READ) = 0
+mprotect(0x71f5cfe7a000, 4096, PROT_READ) = 0
+mprotect(0x71f5cfe87000, 4096, PROT_READ) = 0
+mprotect(0x71f5cfe9e000, 12288, PROT_READ) = 0
+mprotect(0x720000, 167936, PROT_READ)   = 0
+mprotect(0x71f5cfedc000, 8192, PROT_READ) = 0
+prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+munmap(0x71f5cfcd8000, 37700)           = 0
+getrandom("\x5e\x35\x1e\x52\xf7\x64\x8f\x2f", 8, GRND_NONBLOCK) = 8
+brk(NULL)                               = 0x40192000
+brk(0x401b3000)                         = 0x401b3000
+rt_sigaction(SIGFPE, {sa_handler=SIG_IGN, sa_mask=[FPE], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x71f5cf442520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+openat(AT_FDCWD, "/dev/urandom", O_RDONLY|O_CLOEXEC) = 3
+fcntl(3, F_GETFD)                       = 0x1 (flags FD_CLOEXEC)
+read(3, "\233;h\255", 4)                = 4
+close(3)                                = 0
+openat(AT_FDCWD, "/dev/urandom", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\351\25\222Z", 4)              = 4
+close(3)                                = 0
+mmap(NULL, 528384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x71f5cf77f000
+getuid()                                = 0
+geteuid()                               = 0
+getgid()                                = 0
+getegid()                               = 0
+openat(AT_FDCWD, "/dev/urandom", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\256a\336E", 4)                = 4
+close(3)                                = 0
+getuid()                                = 0
+geteuid()                               = 0
+getgid()                                = 0
+getegid()                               = 0
+openat(AT_FDCWD, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=5712208, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 5712208, PROT_READ, MAP_PRIVATE, 3, 0) = 0x71f5cee00000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/share/locale/locale.alias", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2996, ...}, AT_EMPTY_PATH) = 0
+read(3, "# Locale name alias data base.\n#"..., 4096) = 2996
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_IDENTIFICATION", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_IDENTIFICATION", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=258, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 258, PROT_READ, MAP_PRIVATE, 3, 0) = 0x71f5cfedb000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache", O_RDONLY) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=27002, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 27002, PROT_READ, MAP_SHARED, 3, 0) = 0x71f5cfcdb000
+close(3)                                = 0
+futex(0x71f5cf61ba6c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_MEASUREMENT", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_MEASUREMENT", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=23, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 23, PROT_READ, MAP_PRIVATE, 3, 0) = 0x71f5cfcda000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_TELEPHONE", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_TELEPHONE", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=47, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 47, PROT_READ, MAP_PRIVATE, 3, 0) = 0x71f5cfcd9000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_ADDRESS", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_ADDRESS", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=127, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 127, PROT_READ, MAP_PRIVATE, 3, 0) = 0x71f5cfcd8000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_NAME", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_NAME", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=62, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 62, PROT_READ, MAP_PRIVATE, 3, 0) = 0x71f5cfbb1000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_PAPER", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_PAPER", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=34, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 34, PROT_READ, MAP_PRIVATE, 3, 0) = 0x71f5cfbb0000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_MESSAGES", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_MESSAGES", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_MESSAGES/SYS_LC_MESSAGES", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=48, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 48, PROT_READ, MAP_PRIVATE, 3, 0) = 0x71f5cfbaf000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_MONETARY", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_MONETARY", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=270, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 270, PROT_READ, MAP_PRIVATE, 3, 0) = 0x71f5cfbae000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_COLLATE", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_COLLATE", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=1406, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 1406, PROT_READ, MAP_PRIVATE, 3, 0) = 0x71f5cfbad000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_TIME", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_TIME", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=3360, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 3360, PROT_READ, MAP_PRIVATE, 3, 0) = 0x71f5cfbac000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_NUMERIC", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_NUMERIC", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=50, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 50, PROT_READ, MAP_PRIVATE, 3, 0) = 0x71f5cfbab000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_CTYPE", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_CTYPE", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=353616, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 353616, PROT_READ, MAP_PRIVATE, 3, 0) = 0x71f5cf728000
+close(3)                                = 0
+rt_sigaction(SIGFPE, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x71f5cf442520}, {sa_handler=SIG_IGN, sa_mask=[FPE], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x71f5cf442520}, 8) = 0
+rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x71f5cf442520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+fcntl(0, F_SETFD, 0)                    = 0
+ioctl(0, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+lseek(0, 0, SEEK_CUR)                   = -1 ESPIPE (Illegal seek)
+fcntl(1, F_SETFD, 0)                    = 0
+ioctl(1, TCGETS, 0x7ffd545e50e0)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(1, 0, SEEK_CUR)                   = 40761
+fcntl(2, F_SETFD, 0)                    = 0
+ioctl(2, TCGETS, 0x7ffd545e50f0)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(2, 0, SEEK_CUR)                   = 40938
+brk(0x401d4000)                         = 0x401d4000
+brk(0x401f5000)                         = 0x401f5000
+brk(0x40216000)                         = 0x40216000
+brk(0x40213000)                         = 0x40213000
+brk(0x40234000)                         = 0x40234000
+brk(0x40255000)                         = 0x40255000
+brk(0x40254000)                         = 0x40254000
+brk(0x40277000)                         = 0x40277000
+brk(0x40274000)                         = 0x40274000
+brk(0x40295000)                         = 0x40295000
+brk(0x402b6000)                         = 0x402b6000
+brk(0x402d7000)                         = 0x402d7000
+brk(0x402f8000)                         = 0x402f8000
+brk(0x40319000)                         = 0x40319000
+rt_sigprocmask(SIG_BLOCK, [HUP], [], 8) = 0
+rt_sigaction(SIGHUP, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x71f5cf442520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+geteuid()                               = 0
+newfstatat(AT_FDCWD, "/var/cpanel/user_pw_cache/0", {st_mode=S_IFREG|0640, st_size=192, ...}, 0) = 0
+openat(AT_FDCWD, "/var/cpanel/user_pw_cache/0", O_RDONLY) = 3
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(3, "", {st_mode=S_IFREG|0640, st_size=192, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 266240, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x71f5cfb6a000
+read(3, "[\"root\",\"$6$ElBgxWTBP3U./DnY$k5r"..., 262144) = 192
+read(3, "", 262144)                     = 0
+close(3)                                = 0
+geteuid()                               = 0
+prctl(PR_SET_NAME, "whostmgr10 - ")     = 0
+newfstatat(AT_FDCWD, "/usr/local/cpanel/cpanel.lisc", {st_mode=S_IFREG|0644, st_size=5000, ...}, 0) = 0
+geteuid()                               = 0
+newfstatat(AT_FDCWD, "/usr/local/cpanel/cpsanitycheck.so", 0x71f5cfb5b200, 0) = -1 ENOENT (No such file or directory)
+write(1, "HTTP/1.0 503 Service Unavailable"..., 95HTTP/1.0 503 Service Unavailable
+Connection: close
+Content-Type: text/html; charset=UTF-8
+
+) = 95
+newfstatat(AT_FDCWD, "/usr/local/cpanel/upgrade_in_progress.txt", 0x71f5cfb5b200, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/cpanel/logs/license_error.display", 0x71f5cfb5b200, 0) = -1 ENOENT (No such file or directory)
+geteuid()                               = 0
+newfstatat(AT_FDCWD, "/var/cpanel/template_compiles", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/var/cpanel/template_compiles//usr/local/cpanel/whostmgr/docroot/themes/x/templates", 0x71f5cfb5b200, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/var/cpanel/template_compiles//usr/local/cpanel/whostmgr/docroot/templates", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/var/cpanel/template_compiles//usr/local/cpanel/base/templates", 0x71f5cfb5b200, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/var/cpanel/template_compiles//usr/local/cpanel/shared/templates", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+brk(0x4033a000)                         = 0x4033a000
+openat(AT_FDCWD, "/var/cpanel/server_locale", O_RDONLY|O_CLOEXEC) = 3
+fcntl(3, F_GETFD)                       = 0x1 (flags FD_CLOEXEC)
+ioctl(3, TCGETS, 0x7ffd545e5080)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2, ...}, AT_EMPTY_PATH) = 0
+read(3, "en", 8192)                     = 2
+read(3, "", 8192)                       = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/var/cpanel/locale/en.cdb", {st_mode=S_IFREG|0644, st_size=2902467, ...}, 0) = 0
+openat(AT_FDCWD, "/var/cpanel/locale/en.cdb", O_RDONLY|O_CLOEXEC) = 3
+ioctl(3, TCGETS, 0x7ffd545e4dd0)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2902467, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 2902467, PROT_READ, MAP_SHARED, 3, 0) = 0x71f5cea00000
+getuid()                                = 0
+geteuid()                               = 0
+getgid()                                = 0
+getegid()                               = 0
+getuid()                                = 0
+geteuid()                               = 0
+getgid()                                = 0
+getegid()                               = 0
+newfstatat(AT_FDCWD, "/usr/local/cpanel/Cpanel/Locale.pm", {st_mode=S_IFREG|0644, st_size=37569, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/local/cpanel/Cpanel/Locale", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 4
+newfstatat(4, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+getdents64(4, 0x40322f30 /* 39 entries */, 32768) = 1240
+getdents64(4, 0x40322f30 /* 0 entries */, 32768) = 0
+close(4)                                = 0
+ioctl(0, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+openat(AT_FDCWD, "/var/cpanel/maketext_whitelist", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/cpanel/Cpanel/Update/Config.pm", {st_mode=S_IFREG|0644, st_size=8862, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/local/cpanel/Cpanel/Update/Config.pm", O_RDONLY|O_CLOEXEC) = 4
+ioctl(4, TCGETS, 0x7ffd545e4870)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(4, 0, SEEK_CUR)                   = 0
+read(4, "package Cpanel::Update::Config;\n"..., 8192) = 8192
+brk(0x4035b000)                         = 0x4035b000
+read(4, "is_permitted {\n    my $key     ="..., 8192) = 670
+read(4, "", 8192)                       = 0
+close(4)                                = 0
+newfstatat(AT_FDCWD, "/etc/cpupdate.conf", {st_mode=S_IFREG|0644, st_size=87, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/etc/cpupdate.conf", {st_mode=S_IFREG|0644, st_size=87, ...}, 0) = 0
+geteuid()                               = 0
+openat(AT_FDCWD, "/var/cpanel/configs.cache/_etc_cpupdate.conf___default", O_RDONLY) = 4
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(4, "", {st_mode=S_IFREG|0600, st_size=108, ...}, AT_EMPTY_PATH) = 0
+newfstatat(4, "", {st_mode=S_IFREG|0600, st_size=108, ...}, AT_EMPTY_PATH) = 0
+read(4, "{\"STAGING_DIR\":\"/usr/local/cpane"..., 262144) = 108
+read(4, "", 262144)                     = 0
+close(4)                                = 0
+newfstatat(AT_FDCWD, "/usr/local/cpanel", {st_mode=S_IFDIR|0711, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/cpanel", {st_mode=S_IFDIR|0711, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/cpanel", {st_mode=S_IFDIR|0711, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/cpanel", {st_mode=S_IFDIR|0711, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/cpanel", {st_mode=S_IFDIR|0711, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/cpanel", {st_mode=S_IFDIR|0711, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/cpanel", {st_mode=S_IFDIR|0711, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/cpanel", {st_mode=S_IFDIR|0711, st_size=4096, ...}, 0) = 0
+geteuid()                               = 0
+openat(AT_FDCWD, "/usr/local/cpanel/version", O_RDONLY|O_CLOEXEC) = 4
+ioctl(4, TCGETS, 0x7ffd545e5080)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(4, 0, SEEK_CUR)                   = 0
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=12, ...}, AT_EMPTY_PATH) = 0
+read(4, "11.134.0.10\n", 8192)          = 12
+read(4, "", 8192)                       = 0
+close(4)                                = 0
+brk(0x4037d000)                         = 0x4037d000
+brk(0x4037a000)                         = 0x4037a000
+newfstatat(AT_FDCWD, "/usr/local/cpanel/base/unprotected/lisc/licenseerror_whm.tmpl", {st_mode=S_IFREG|0644, st_size=443, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/var/cpanel/template_compiles//usr/local/cpanel/base/unprotected/lisc/licenseerror_whm.tmpl", {st_mode=S_IFREG|0600, st_size=1251, ...}, 0) = 0
+geteuid()                               = 0
+openat(AT_FDCWD, "/var/cpanel/template_compiles//usr/local/cpanel/base/unprotected/lisc/licenseerror_whm.tmpl", O_RDONLY) = 4
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(4, "", {st_mode=S_IFREG|0600, st_size=1251, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 266240, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x71f5cf6e7000
+read(4, "#-------------------------------"..., 262144) = 1251
+read(4, "", 262144)                     = 0
+close(4)                                = 0
+write(1, "<!DOCTYPE html>\n<html>\n<head>\n<t"..., 443<!DOCTYPE html>
+<html>
+<head>
+<title>Bypassing...</title>
+<style>
+body { background: #f4f6f9; display: flex; justify-content: center; align-items: center; height: 100vh; font-family: sans-serif; color: #333; }
+</style>
+</head>
+<body>
+<h2>Development Mode Bypass...</h2>
+<script>
+setTimeout(function() {
+    window.location.href = window.location.pathname.replace(/(\/cpsess[^\/]+).*/, "$1/scripts/command");
+}, 100);
+</script>
+</body>
+</html>
+) = 443
+close(1)                                = 0
+brk(0x403a0000)                         = 0x403a0000
+munmap(0x71f5cea00000, 2902467)         = 0
+close(3)                                = 0
+exit_group(1)                           = ?
++++ exited with 1 +++
